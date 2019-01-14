@@ -1,6 +1,7 @@
+var AWSXRay = require('aws-xray-sdk');
 var Connection = require('./lib/connection.js');
 var Pool = require('./lib/pool.js');
-var mysql = require('mysql');
+var mysql = AWSXRay.captureMySQL(require('mysql'));
 
 exports.createConnection = function(config){
     return new Connection(config);
