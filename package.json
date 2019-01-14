@@ -36,8 +36,9 @@
     "url": "https://github.com/lukeb-uk/node-promise-mysql/issues"
   },
   "dependencies": {
-    "@types/mysql": "^2.15.2",
     "@types/bluebird": "^3.5.19",
+    "@types/mysql": "^2.15.2",
+    "aws-xray-sdk": "^2.1.0",
     "bluebird": "^3.5.0",
     "mysql": "^2.14.1"
   },
