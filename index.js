@@ -3,11 +3,12 @@ var Connection = require('./lib/connection.js');
 var Pool = require('./lib/pool.js');
 var mysql = AWSXRay.captureMySQL(require('mysql'));
 
-exports.createConnection = function(config){
+exports.createConnection = function(config) {
+    console.log('doing stuff');
     return new Connection(config);
 }
 
-exports.createPool = function(config){
+exports.createPool = function(config) {
     return new Pool(config);
 }
 
